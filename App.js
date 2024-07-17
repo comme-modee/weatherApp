@@ -22,7 +22,7 @@ const icons = {
   Thunderstorm: "lightning",
 }
 
-const API_KEY = "038c64f24b5e0e3aa10dd513abbdaf98";
+const API_KEY = process.env.API_KEY;
 
 export default function Index() {
   const [ city, setCity ] = useState(<Emoji name="coffee" style={{fontSize: 60}} />)
